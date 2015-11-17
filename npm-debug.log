@@ -1,0 +1,198 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\nodejs\\node.exe',
+1 verbose cli   'D:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'menuitem',
+1 verbose cli   '--save' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.2
+4 verbose install initial load of E:\addon-sdk-1.17\my-addon\package.json
+5 warn package.json are@0.0.1 No repository field.
+6 verbose readDependencies loading dependencies from E:\addon-sdk-1.17\my-addon\package.json
+7 silly cache add args [ 'menuitem', null ]
+8 verbose cache add spec menuitem
+9 silly cache add parsed spec Result {
+9 silly cache add   raw: 'menuitem',
+9 silly cache add   scope: null,
+9 silly cache add   name: 'menuitem',
+9 silly cache add   rawSpec: '',
+9 silly cache add   spec: '*',
+9 silly cache add   type: 'range' }
+10 silly addNamed menuitem@*
+11 verbose addNamed "*" is a valid semver range for menuitem
+12 silly addNameRange { name: 'menuitem', range: '*', hasData: false }
+13 silly mapToRegistry name menuitem
+14 silly mapToRegistry using default registry
+15 silly mapToRegistry registry https://registry.npmjs.org/
+16 silly mapToRegistry uri https://registry.npmjs.org/menuitem
+17 verbose addNameRange registry:https://registry.npmjs.org/menuitem not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/menuitem
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 17:34:59
+21 verbose request id 43fa74fe5420103d
+22 http request GET https://registry.npmjs.org/menuitem
+23 http 200 https://registry.npmjs.org/menuitem
+24 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 verbose headers   etag: '"2SXWR4HB6Y0DBIBS2WZGVSUWN"',
+24 verbose headers   'content-type': 'application/json',
+24 verbose headers   'cache-control': 'max-age=60',
+24 verbose headers   'content-length': '3055',
+24 verbose headers   'accept-ranges': 'bytes',
+24 verbose headers   date: 'Fri, 06 Nov 2015 09:26:56 GMT',
+24 verbose headers   via: '1.1 varnish',
+24 verbose headers   age: '0',
+24 verbose headers   connection: 'keep-alive',
+24 verbose headers   'x-served-by': 'cache-itm7426-ITM',
+24 verbose headers   'x-cache': 'MISS',
+24 verbose headers   'x-cache-hits': '0',
+24 verbose headers   'x-timer': 'S1446802016.377157,VS0,VE581',
+24 verbose headers   vary: 'Accept' }
+25 silly get cb [ 200,
+25 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+25 silly get     etag: '"2SXWR4HB6Y0DBIBS2WZGVSUWN"',
+25 silly get     'content-type': 'application/json',
+25 silly get     'cache-control': 'max-age=60',
+25 silly get     'content-length': '3055',
+25 silly get     'accept-ranges': 'bytes',
+25 silly get     date: 'Fri, 06 Nov 2015 09:26:56 GMT',
+25 silly get     via: '1.1 varnish',
+25 silly get     age: '0',
+25 silly get     connection: 'keep-alive',
+25 silly get     'x-served-by': 'cache-itm7426-ITM',
+25 silly get     'x-cache': 'MISS',
+25 silly get     'x-cache-hits': '0',
+25 silly get     'x-timer': 'S1446802016.377157,VS0,VE581',
+25 silly get     vary: 'Accept' } ]
+26 verbose get saving menuitem to C:\Users\mixi\AppData\Roaming\npm-cache\registry.npmjs.org\menuitem\.cache.json
+27 silly addNameRange number 2 { name: 'menuitem', range: '*', hasData: true }
+28 silly addNameRange versions [ 'menuitem', [ '0.0.5' ] ]
+29 silly addNamed menuitem@0.0.5
+30 verbose addNamed "0.0.5" is a plain semver version for menuitem
+31 silly mapToRegistry name menuitem
+32 silly mapToRegistry using default registry
+33 silly mapToRegistry registry https://registry.npmjs.org/
+34 silly mapToRegistry uri https://registry.npmjs.org/menuitem
+35 verbose addRemoteTarball https://registry.npmjs.org/menuitem/-/menuitem-0.0.5.tgz not in flight; adding
+36 verbose addRemoteTarball [ 'https://registry.npmjs.org/menuitem/-/menuitem-0.0.5.tgz',
+36 verbose addRemoteTarball   'c170347dcc0cc7195af645f300acd8f99522f896' ]
+37 info retry fetch attempt 1 at 17:35:00
+38 info attempt registry request try #1 at 17:35:00
+39 http fetch GET https://registry.npmjs.org/menuitem/-/menuitem-0.0.5.tgz
+40 http fetch 200 https://registry.npmjs.org/menuitem/-/menuitem-0.0.5.tgz
+41 silly fetchAndShaCheck shasum c170347dcc0cc7195af645f300acd8f99522f896
+42 verbose addTmpTarball C:\Users\mixi\AppData\Local\Temp\npm-3268-08ff3c61\registry.npmjs.org\menuitem\-\menuitem-0.0.5.tgz not in flight; adding
+43 verbose addTmpTarball already have metadata; skipping unpack for menuitem@0.0.5
+44 silly cache afterAdd menuitem@0.0.5
+45 verbose afterAdd C:\Users\mixi\AppData\Roaming\npm-cache\menuitem\0.0.5\package\package.json not in flight; writing
+46 verbose afterAdd C:\Users\mixi\AppData\Roaming\npm-cache\menuitem\0.0.5\package\package.json written
+47 silly install resolved [ { name: 'menuitem',
+47 silly install resolved     author: { name: 'Erik Vold' },
+47 silly install resolved     version: '0.0.5',
+47 silly install resolved     license: 'MPL-2.0',
+47 silly install resolved     main: 'index.js',
+47 silly install resolved     keywords: [ 'gecko', 'firefox', 'jetpack', 'menuitem', 'menu', 'ui' ],
+47 silly install resolved     dependencies: { pathfinder: 'git+https://github.com/OverByThere/addon-pathfinder.git' },
+47 silly install resolved     repository:
+47 silly install resolved      { type: 'git',
+47 silly install resolved        url: 'git+https://github.com/OverByThere/menuitem.git' },
+47 silly install resolved     description: '[![Build Status](https://travis-ci.org/jetpack-labs/menuitem.png)](https://travis-ci.org/jetpack-labs/menuitem)',
+47 silly install resolved     bugs: { url: 'https://github.com/OverByThere/menuitem/issues' },
+47 silly install resolved     homepage: 'https://github.com/OverByThere/menuitem#readme',
+47 silly install resolved     directories: { test: 'test' },
+47 silly install resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+47 silly install resolved     gitHead: 'bb3f05ea29164bf673a4cdd076fc620266028e53',
+47 silly install resolved     _id: 'menuitem@0.0.5',
+47 silly install resolved     _shasum: 'c170347dcc0cc7195af645f300acd8f99522f896',
+47 silly install resolved     _from: 'menuitem@*',
+47 silly install resolved     _npmVersion: '2.14.2',
+47 silly install resolved     _nodeVersion: '4.0.0',
+47 silly install resolved     _npmUser: { name: 'overbythere', email: 'accounts.npm@overbythere.co.uk' },
+47 silly install resolved     dist:
+47 silly install resolved      { shasum: 'c170347dcc0cc7195af645f300acd8f99522f896',
+47 silly install resolved        tarball: 'http://registry.npmjs.org/menuitem/-/menuitem-0.0.5.tgz' },
+47 silly install resolved     maintainers: [ [Object] ],
+47 silly install resolved     _resolved: 'https://registry.npmjs.org/menuitem/-/menuitem-0.0.5.tgz' } ]
+48 info install menuitem@0.0.5 into E:\addon-sdk-1.17\my-addon
+49 info installOne menuitem@0.0.5
+50 verbose installOne of menuitem to E:\addon-sdk-1.17\my-addon not in flight; installing
+51 verbose lock using C:\Users\mixi\AppData\Roaming\npm-cache\_locks\menuitem-e226530a50e167ad.lock for E:\addon-sdk-1.17\my-addon\node_modules\menuitem
+52 silly install write writing menuitem 0.0.5 to E:\addon-sdk-1.17\my-addon\node_modules\menuitem
+53 verbose unbuild node_modules\menuitem
+54 silly gentlyRm E:\addon-sdk-1.17\my-addon\node_modules\menuitem is being purged from base E:\addon-sdk-1.17\my-addon
+55 verbose gentlyRm don't care about contents; nuking E:\addon-sdk-1.17\my-addon\node_modules\menuitem
+56 verbose tar unpack C:\Users\mixi\AppData\Roaming\npm-cache\menuitem\0.0.5\package.tgz
+57 verbose tar unpacking to E:\addon-sdk-1.17\my-addon\node_modules\menuitem
+58 silly gentlyRm E:\addon-sdk-1.17\my-addon\node_modules\menuitem is being purged
+59 verbose gentlyRm don't care about contents; nuking E:\addon-sdk-1.17\my-addon\node_modules\menuitem
+60 silly gunzTarPerm modes [ '777', '666' ]
+61 silly gunzTarPerm extractEntry package.json
+62 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+63 silly gunzTarPerm extractEntry .npmignore
+64 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+65 silly gunzTarPerm extractEntry README.md
+66 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+67 silly gunzTarPerm extractEntry index.js
+68 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+69 silly gunzTarPerm extractEntry .travis.yml
+70 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+71 silly gunzTarPerm extractEntry test/test-menuitems.js
+72 silly gunzTarPerm modified mode [ 'test/test-menuitems.js', 420, 438 ]
+73 verbose write writing to E:\addon-sdk-1.17\my-addon\node_modules\menuitem\package.json
+74 info preinstall menuitem@0.0.5
+75 verbose readDependencies loading dependencies from E:\addon-sdk-1.17\my-addon\node_modules\menuitem\package.json
+76 silly prepareForInstallMany adding pathfinder@git+https://github.com/OverByThere/addon-pathfinder.git from menuitem dependencies
+77 verbose readDependencies loading dependencies from E:\addon-sdk-1.17\my-addon\node_modules\menuitem\package.json
+78 silly cache add args [ 'pathfinder@git+https://github.com/OverByThere/addon-pathfinder.git',
+78 silly cache add   null ]
+79 verbose cache add spec pathfinder@git+https://github.com/OverByThere/addon-pathfinder.git
+80 silly cache add parsed spec Result {
+80 silly cache add   raw: 'pathfinder@git+https://github.com/OverByThere/addon-pathfinder.git',
+80 silly cache add   scope: null,
+80 silly cache add   name: 'pathfinder',
+80 silly cache add   rawSpec: 'git+https://github.com/OverByThere/addon-pathfinder.git',
+80 silly cache add   spec: 'git+https://github.com/OverByThere/addon-pathfinder.git',
+80 silly cache add   type: 'hosted',
+80 silly cache add   hosted:
+80 silly cache add    { type: 'github',
+80 silly cache add      ssh: 'git@github.com:OverByThere/addon-pathfinder.git',
+80 silly cache add      sshUrl: 'git+ssh://git@github.com/OverByThere/addon-pathfinder.git',
+80 silly cache add      httpsUrl: 'git+https://github.com/OverByThere/addon-pathfinder.git',
+80 silly cache add      gitUrl: 'git://github.com/OverByThere/addon-pathfinder.git',
+80 silly cache add      shortcut: 'github:OverByThere/addon-pathfinder',
+80 silly cache add      directUrl: 'https://raw.githubusercontent.com/OverByThere/addon-pathfinder/master/package.json' } }
+81 verbose addRemoteGit caching git+https://github.com/OverByThere/addon-pathfinder.git
+82 verbose addRemoteGit git+https://github.com/OverByThere/addon-pathfinder.git is a repository hosted by github
+83 silly tryClone cloning git+https://github.com/OverByThere/addon-pathfinder.git via git+https://github.com/OverByThere/addon-pathfinder.git
+84 verbose tryClone https-github-com-OverByThere-addon-pathfinder-git-93454c54 not in flight; caching
+85 verbose makeDirectory C:\Users\mixi\AppData\Roaming\npm-cache\_git-remotes creation not in flight; initializing
+86 verbose makeCacheDir UID & GID are irrelevant on win32
+87 error git clone --template=C:\Users\mixi\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://github.com/OverByThere/addon-pathfinder.git C:\Users\mixi\AppData\Roaming\npm-cache\_git-remotes\https-github-com-OverByThere-addon-pathfinder-git-93454c54: undefined
+87 error git clone --template=C:\Users\mixi\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://github.com/OverByThere/addon-pathfinder.git C:\Users\mixi\AppData\Roaming\npm-cache\_git-remotes\https-github-com-OverByThere-addon-pathfinder-git-93454c54: undefined
+88 verbose about to build E:\addon-sdk-1.17\my-addon\node_modules\menuitem
+89 verbose unlock done using C:\Users\mixi\AppData\Roaming\npm-cache\_locks\menuitem-e226530a50e167ad.lock for E:\addon-sdk-1.17\my-addon\node_modules\menuitem
+90 verbose stack Error: not found: git
+90 verbose stack     at F (D:\nodejs\node_modules\npm\node_modules\which\which.js:73:28)
+90 verbose stack     at E (D:\nodejs\node_modules\npm\node_modules\which\which.js:76:29)
+90 verbose stack     at D:\nodejs\node_modules\npm\node_modules\which\which.js:84:16
+90 verbose stack     at FSReqWrap.oncomplete (fs.js:82:15)
+91 verbose cwd E:\addon-sdk-1.17\my-addon
+92 error Windows_NT 6.1.7601
+93 error argv "D:\\nodejs\\node.exe" "D:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "menuitem" "--save"
+94 error node v4.2.2
+95 error npm  v2.14.7
+96 error code ENOGIT
+97 error not found: git
+98 error Failed using git.
+98 error This is most likely not a problem with npm itself.
+98 error Please check if you have git installed and in your PATH.
+99 verbose exit [ 1, true ]
+100 verbose unbuild node_modules\menuitem
+101 info preuninstall menuitem@0.0.5
+102 info uninstall menuitem@0.0.5
+103 verbose unbuild rmStuff menuitem@0.0.5 from E:\addon-sdk-1.17\my-addon\node_modules
+104 info postuninstall menuitem@0.0.5
+105 silly gentlyRm E:\addon-sdk-1.17\my-addon\node_modules\menuitem is being purged from base E:\addon-sdk-1.17\my-addon
+106 verbose gentlyRm don't care about contents; nuking E:\addon-sdk-1.17\my-addon\node_modules\menuitem
+107 silly vacuum-fs purging E:\addon-sdk-1.17\my-addon\node_modules\menuitem
+108 silly vacuum-fs removing E:\addon-sdk-1.17\my-addon\node_modules
+109 silly vacuum-fs finished vacuuming up to E:\addon-sdk-1.17\my-addon

@@ -1,0 +1,16 @@
+{
+  "title": "Amazon Reviewer Email",
+  "name": "are",
+  "version": "0.0.1",
+  "description": "help to get email address from product page reivews",
+  "main": "index.js",
+  "author": "tandlol",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ]
+}
