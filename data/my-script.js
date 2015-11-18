@@ -1,4 +1,7 @@
 // console.log($("#revMH .noTextDecoration").html());
+
+self.port.emit("alert", "help");
+
 var len0 = $("#revMH .noTextDecoration").length;
 var len1 = $(".author").length;
 

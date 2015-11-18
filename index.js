@@ -1,5 +1,8 @@
 var buttons = require('sdk/ui/button/action');
 var tabs = require("sdk/tabs");
+var self = require("sdk/self");
+var panels = require("sdk/panel");
+
 /*
 var button = buttons.ActionButton({
   id: "mozilla-link",
@@ -84,24 +87,35 @@ function runScript(tab) {
 }
 
 */
+
+var panel = panels.Panel({
+  contentURL: self.data.url("mypanel.html"),
+  contentScriptFile: self.data.url("mypanel.js")
+});
+
 //=========================================================================
-var self = require("sdk/self");
 
 var button = require("sdk/ui/button/action").ActionButton({
-  id: "style-tab",
-  label: "Style Tab",
+  id: "Amazon_Reviewer_Email",
+  label: "Amazon Reviewer Email",
   icon: "./icon-16.png",
   onClick: function() {
-    require("sdk/tabs").activeTab.attach({
+    var worker = tabs.activeTab.attach({
       contentScriptFile:  [self.data.url('jquery-1.10.2.min.js'),
 					  self.data.url('my-script.js')]
     });
+	worker.port.on("alert", function(msg){
+		panel.show();
+		console.log(msg);
+	});
   }
 });
-/*
-var self = require("sdk/self");
-var tabs = require("sdk/tabs");
 
+panel.port.on("myMessage", function handleMyMessage(myMessagePayload) {
+  // Handle the message
+  console.log(myMessagePayload);
+});
+/*
 require("sdk/ui/button/action").ActionButton({
   id: "load-several",
   label: "load several scripts",
