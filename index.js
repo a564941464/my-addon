@@ -88,10 +88,10 @@ function runScript(tab) {
 
 */
 
-var panel = panels.Panel({
-  contentURL: self.data.url("mypanel.html"),
-  contentScriptFile: self.data.url("mypanel.js")
-});
+// var panel = panels.Panel({
+  // contentURL: self.data.url("mypanel.html"),
+  // contentScriptFile: self.data.url("mypanel.js")
+// });
 
 //=========================================================================
 
@@ -104,17 +104,17 @@ var button = require("sdk/ui/button/action").ActionButton({
       contentScriptFile:  [self.data.url('jquery-1.10.2.min.js'),
 					  self.data.url('my-script.js')]
     });
-	worker.port.on("alert", function(msg){
-		panel.show();
-		console.log(msg);
-	});
+	// worker.port.on("alert", function(msg){
+		// panel.show();
+		// console.log(msg);
+	// });
   }
 });
 
-panel.port.on("myMessage", function handleMyMessage(myMessagePayload) {
+// panel.port.on("myMessage", function handleMyMessage(myMessagePayload) {
   // Handle the message
-  console.log(myMessagePayload);
-});
+  // console.log(myMessagePayload);
+// });
 /*
 require("sdk/ui/button/action").ActionButton({
   id: "load-several",
