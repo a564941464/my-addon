@@ -2,22 +2,31 @@
 
 // self.port.emit("alert", "help");
 
-var len0 = $("#revMH .noTextDecoration").length;
-var len1 = $(".author").length;
-
-var sel_el = len0 > len1 ? $("#revMH .noTextDecoration") : $(".author");
+var top_reviewers_href ="https://www.amazon.com/review/top-reviewers";
+var page_url = window.location.href;
 
 var psn_ids_names = [];//[[id, name]]
-sel_el.each(function(){
-	// console.log($(this).attr("href"));
-	var href = $(this).attr("href");
-	var psn_id = href.split("/")[4];
-	psn_ids_names.push([psn_id, $(this).text()]);
-});
-
-
 var email_get_url = "http://www.amazon.com/gp/profile/{{psn_id}}/customer_email";
 var profile_url = "http://www.amazon.com/gp/pdp/profile/";
+
+
+if(page_url.indexOf(top_reviewers_href)==0){//处理top_reviewers
+	var psn_ids = $("a[name]");
+	psn_ids.each(function(){
+		var psn_id = $(this).attr("name");
+		psn_ids_names.push([psn_id, "no name"]);
+	});
+}else{
+	var len0 = $("#revMH .noTextDecoration").length;//product page
+	var len1 = $(".author").length;//reviews page 
+	var sel_el = len0 > len1 ? $("#revMH .noTextDecoration") : $(".author");
+	sel_el.each(function(){
+		// console.log($(this).attr("href"));
+		var href = $(this).attr("href");
+		var psn_id = href.split("/")[4];
+		psn_ids_names.push([psn_id, $(this).text()]);
+	});
+}
 
 var email_res = [];//[[email,name]]
 var count = 0;
