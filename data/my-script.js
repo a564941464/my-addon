@@ -12,7 +12,7 @@ var profile_url = "https://www.amazon.com/gp/pdp/profile/";
 
 if(page_url.indexOf(top_reviewers_href)==0){//处理top_reviewers
 	var psn_ids = $("a[name]");
-	alert(JSON.stringify(psn_ids));
+	//alert(JSON.stringify(psn_ids));
 	psn_ids.each(function(){
 		var psn_id = $(this).attr("name");
 		psn_ids_names.push([psn_id, "noname"]);
