@@ -6,15 +6,16 @@ var top_reviewers_href ="https://www.amazon.com/review/top-reviewers";
 var page_url = window.location.href;
 
 var psn_ids_names = [];//[[id, name]]
-var email_get_url = "http://www.amazon.com/gp/profile/{{psn_id}}/customer_email";
-var profile_url = "http://www.amazon.com/gp/pdp/profile/";
+var email_get_url = "https://www.amazon.com/gp/profile/{{psn_id}}/customer_email";
+var profile_url = "https://www.amazon.com/gp/pdp/profile/";
 
 
 if(page_url.indexOf(top_reviewers_href)==0){//处理top_reviewers
 	var psn_ids = $("a[name]");
+	alert(JSON.stringify(psn_ids));
 	psn_ids.each(function(){
 		var psn_id = $(this).attr("name");
-		psn_ids_names.push([psn_id, "no name"]);
+		psn_ids_names.push([psn_id, "noname"]);
 	});
 }else{
 	var len0 = $("#revMH .noTextDecoration").length;//product page
@@ -40,7 +41,7 @@ psn_ids_names.forEach(function(item){
 			++count;
 			if(count == psn_ids_names.length){
 				var r = email_res.map(function(item){
-					return item.join(",");
+					return item.join(", ");
 				});
 				alert(r.join("\n"));
 			}
